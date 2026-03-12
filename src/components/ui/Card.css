@@ -1,0 +1,37 @@
+.card {
+  background: var(--color-bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: hsl(174, 83%, 30% / 0.12);
+}
+
+.card-icon {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.card:hover .card-icon svg {
+  animation: pulse 1s infinite;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
